@@ -1,16 +1,44 @@
 ### Hi there 👋
 
-<!--
-**alerodrod/alerodrod** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```php
+<?php
 
-Here are some ideas to get you started:
+declare(strict_types=1);
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+namespace World;
+
+class Alejandro implements IDeveloper, IInvestor, IEntrepreneur
+{
+    public function getStack(): array
+    {
+        return [
+            'languages' => [
+                ILanguage::PHP,
+                ILanguage::JS,
+                ILanguage::SQL,
+            ],
+            'frameworks' => [
+                IFramework::LARAVEL,
+                IFramework::LUMEN,
+                IFramework::VUE,
+                IFramework::PHPUNIT,
+            ],
+            'others' => [
+                IArchitecture::CLEAN,
+                IPlatform::DOCKER,
+                IRdbms::MYSQL,
+                IVcs::GIT,
+            ],
+        ];
+    }
+
+    public function getLearning(): array
+    {
+        return [
+            IFramework::SYMFONY,
+            ITech::BLOCKCHAIN,
+        ];
+    }
+}
+```
+}
